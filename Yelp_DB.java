@@ -53,27 +53,7 @@ public class Yelp_DB extends SQLiteOpenHelper {
         db.close();
     }
 
-//    public ArrayList<Restaurants> getRestos() {
-//        ArrayList<Restaurants> arrayList = new ArrayList<>();
-//
-//        // select all query
-//        String select_query= "SELECT *FROM " +"FAVORITES";
-//
-//        SQLiteDatabase db = this.getWritableDatabase();
-//        Cursor cursor = db.rawQuery(select_query, null);
-//
-//        // looping through all rows and adding to list
-//        if (cursor.moveToFirst()) {
-//            do {
-//                Restaurants restaurants = new Restaurants();
-//                restaurants.setName(cursor.getString(1));
-//                restaurants.setPrice(cursor.getString(2));
-//                restaurants.setPhone(cursor.getString(3));
-//                arrayList.add(restaurants);
-//            }while (cursor.moveToNext());
-//        }
-//        return arrayList;
-//    }
+
 
     Cursor readAllData (){
         String select_query= "SELECT *FROM " +"FAVORITES";
